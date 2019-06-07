@@ -12,13 +12,14 @@ class Main extends Component{
 
     state = {
         theme: 'dark',
-        current: '1',
+        currentPositon: '1',
     };
+
 
     handleClick = e => {
         console.log('click ', e);
         this.setState({
-            current: e.key,
+            currentPositon: e.key,
         });
     };
 
@@ -88,11 +89,6 @@ class Main extends Component{
                             </Menu>
                         </Sider>
                         <Layout style={{ padding: '0 0 0' }}>
-                            {/*<Breadcrumb style={{ margin: '16px 0' }}>*/}
-                            {/*    <Breadcrumb.Item>Home</Breadcrumb.Item>*/}
-                            {/*    <Breadcrumb.Item>List</Breadcrumb.Item>*/}
-                            {/*    <Breadcrumb.Item>App</Breadcrumb.Item>*/}
-                            {/*</Breadcrumb>*/}
                             <Content
                                 style={{
                                     background: '#000',
