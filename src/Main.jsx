@@ -12,15 +12,15 @@ class Main extends Component{
 
     state = {
         theme: 'dark',
-        current: '1',
+        currentPosition: '1',
     };
 
-    chan
+
 
     handleClick = e => {
         console.log('click ', e);
         this.setState({
-            current: e.key,
+            currentPosition: e.key,
         });
     };
 
