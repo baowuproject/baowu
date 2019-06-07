@@ -15,8 +15,6 @@ class Main extends Component{
         current: '1',
     };
 
-    chan
-
     handleClick = e => {
         console.log('click ', e);
         this.setState({
