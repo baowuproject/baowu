@@ -9,7 +9,8 @@ class NnetWorkChart extends Component{
             width: '500px',
             height: '500px',
             layerX1: 300,
-            layerX2: 360
+            layerX2: 380,
+            links:[]
         };
         this.chart = null;
     }
@@ -23,8 +24,22 @@ class NnetWorkChart extends Component{
     componentDidMount = async () =>{
         console.log('did mount');
         // 初始化图表
+        setTimeout(() => this.setState({links: [{
+                source: '节点2',
+                target: '节点7'
+            }, {
+                source: '节点2',
+                target: '节点8'
+            }, {
+                source: '节点2',
+                target: '节点9'
+            }, {
+                source: '节点2',
+                target: '节点10'
+            }]}), 10000);
         let positionX1 = this.state.layerX1;
         let positionX2 = this.state.layerX2;
+        let links = this.state.links;
         let option = {
             title: {
                 text: 'Graph 简单示例'
@@ -60,23 +75,23 @@ class NnetWorkChart extends Component{
                     }, {
                         name: '节点2',
                         x: positionX1,
-                        y: 120
+                        y: 130
                     }, {
                         name: '节点3',
                         x: positionX1,
-                        y: 140
+                        y: 160
                     }, {
                         name: '节点4',
                         x: positionX1,
-                        y: 160
+                        y: 190
                     },{
                         name: '节点5',
                         x: positionX1,
-                        y: 180
+                        y: 220
                     },{
                         name: '节点6',
                         x: positionX1,
-                        y: 200
+                        y: 250
                     },{
                         name: '节点7',
                         x: positionX2,
@@ -84,38 +99,38 @@ class NnetWorkChart extends Component{
                     },{
                         name: '节点8',
                         x: positionX2,
-                        y: 100
+                        y: 110
                     },{
                         name: '节点9',
                         x: positionX2,
-                        y: 120
+                        y: 140
                     },{
                         name: '节点10',
                         x: positionX2,
-                        y: 140
+                        y: 170
                     },{
                         name: '节点11',
                         x: positionX2,
-                        y: 160
+                        y: 200
                     },{
                         name: '节点12',
                         x: positionX2,
-                        y: 180
+                        y: 230
                     },{
                         name: '节点13',
                         x: positionX2,
-                        y: 200
+                        y: 260
                     },{
                         name: '节点14',
                         x: positionX2,
-                        y: 220
+                        y: 290
                     },{
                         name: '节点15',
-                        x: positionX2,
-                        y: 240
+                        x: positionX2 + 50,
+                        y: 320
                     },{
                         name: '节点16',
-                        x: positionX2,
+                        x: positionX2 + 50,
                         y: 260
                     },{
                         name: '节点17',
@@ -127,39 +142,27 @@ class NnetWorkChart extends Component{
                         y: 160
                     },{
                         name: '节点19',
-                        x: 300,
+                        x: 400,
                         y: 160
                     },{
                         name: '节点20',
-                        x: 300,
+                        x: 400,
                         y: 160
                     },{
                         name: '节点21',
-                        x: 300,
+                        x: 400,
                         y: 160
                     },{
                         name: '节点22',
-                        x: 360,
+                        x: 400,
                         y: 160
                     },{
                         name: '节点23',
-                        x: 360,
+                        x: positionX2 + 50,
                         y: 160
                     }],
                     // links: [],
-                    links: [{
-                        source: '节点1',
-                        target: '节点7'
-                    }, {
-                        source: '节点1',
-                        target: '节点8'
-                    }, {
-                        source: '节点1',
-                        target: '节点9'
-                    }, {
-                        source: '节点1',
-                        target: '节点10'
-                    }],
+                    links: links,
                     lineStyle: {
                         normal: {
                             opacity: 0.9,
@@ -178,7 +181,144 @@ class NnetWorkChart extends Component{
     };
     componentDidUpdate = () => {
         // 每次更新组件都重置
-        this.setOption(this.props.option);
+        let positionX1 = this.state.layerX1;
+        let positionX2 = this.state.layerX2;
+        let links = this.state.links;
+        let option = {
+            title: {
+                text: 'Graph 简单示例'
+            },
+            tooltip: {},
+            animationDurationUpdate: 1500,
+            animationEasingUpdate: 'quinticInOut',
+            series : [
+                {
+                    type: 'graph',
+                    layout: 'none',
+                    symbolSize: 50,
+                    roam: true,
+                    color: "blue",
+                    label: {
+                        normal: {
+                            show: true
+                        }
+                    },
+                    edgeSymbol: ['circle', 'arrow'],
+                    edgeSymbolSize: [4, 10],
+                    edgeLabel: {
+                        normal: {
+                            textStyle: {
+                                fontSize: 20
+                            }
+                        }
+                    },
+                    data: [{
+                        name: '节点1',
+                        x: positionX1,
+                        y: 100
+                    }, {
+                        name: '节点2',
+                        x: positionX1,
+                        y: 130
+                    }, {
+                        name: '节点3',
+                        x: positionX1,
+                        y: 160
+                    }, {
+                        name: '节点4',
+                        x: positionX1,
+                        y: 190
+                    },{
+                        name: '节点5',
+                        x: positionX1,
+                        y: 220
+                    },{
+                        name: '节点6',
+                        x: positionX1,
+                        y: 250
+                    },{
+                        name: '节点7',
+                        x: positionX2,
+                        y: 80
+                    },{
+                        name: '节点8',
+                        x: positionX2,
+                        y: 110
+                    },{
+                        name: '节点9',
+                        x: positionX2,
+                        y: 140
+                    },{
+                        name: '节点10',
+                        x: positionX2,
+                        y: 170
+                    },{
+                        name: '节点11',
+                        x: positionX2,
+                        y: 200
+                    },{
+                        name: '节点12',
+                        x: positionX2,
+                        y: 230
+                    },{
+                        name: '节点13',
+                        x: positionX2,
+                        y: 260
+                    },{
+                        name: '节点14',
+                        x: positionX2,
+                        y: 290
+                    },{
+                        name: '节点15',
+                        x: positionX2 + 50,
+                        y: 320
+                    },{
+                        name: '节点16',
+                        x: positionX2 + 50,
+                        y: 260
+                    },{
+                        name: '节点17',
+                        x: 400,
+                        y: 160
+                    },{
+                        name: '节点18',
+                        x: 400,
+                        y: 160
+                    },{
+                        name: '节点19',
+                        x: 400,
+                        y: 160
+                    },{
+                        name: '节点20',
+                        x: 400,
+                        y: 160
+                    },{
+                        name: '节点21',
+                        x: 400,
+                        y: 160
+                    },{
+                        name: '节点22',
+                        x: 400,
+                        y: 160
+                    },{
+                        name: '节点23',
+                        x: positionX2 + 50,
+                        y: 160
+                    }],
+                    // links: [],
+                    links: links,
+                    lineStyle: {
+                        normal: {
+                            opacity: 0.9,
+                            width: 2,
+                            curveness: 0
+                        }
+                    }
+                }
+            ]
+        };
+
+        this.setOption(option);
     };
     componentWillUnmount = () =>{
         // 组件卸载前卸载图表
