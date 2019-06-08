@@ -15,14 +15,17 @@ class Navigation extends Component{
         return(
             <StickyContainer>
                 <Tabs defaultActiveKey="1" renderTabBar={renderTabBar}>
-                    <TabPane tab="Tab 1" key="1" style={{ height: 200 }}>
+                    <TabPane tab="透平轴前截面" key="1" style={{ height: 200 }}>
                         Content of Tab Pane 1
                     </TabPane>
-                    <TabPane tab="Tab 2" key="2">
+                    <TabPane tab="透平轴后截面" key="2">
                         Content of Tab Pane 2
                     </TabPane>
-                    <TabPane tab="Tab 3" key="3">
+                    <TabPane tab="发动机轴前截面" key="3">
                         Content of Tab Pane 3
+                    </TabPane>
+                    <TabPane tab="发动机轴后截面" key="4">
+                        Content of Tab Pane 4
                     </TabPane>
                 </Tabs>
             </StickyContainer>
