@@ -14,7 +14,7 @@ class Navigation extends Component{
     render() {
         return(
             <StickyContainer>
-                <Tabs defaultActiveKey="1" renderTabBar={renderTabBar}>
+                <Tabs defaultActiveKey="1" renderTabBar={renderTabBar} style={{backgroundColor:"#000"}}>
                     <TabPane tab="透平轴前截面" key="1" style={{ height: 200 }}>
                         Content of Tab Pane 1
                     </TabPane>

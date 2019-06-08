@@ -25,7 +25,7 @@ class Main extends Component{
                         <Layout style={{ padding: '0 0 0' }}>
                             <Content
                                 style={{
-                                    background: '#fff',
+                                    background: '#000',
                                     padding: 24,
                                     margin: 0,
                                     minHeight: 500,
