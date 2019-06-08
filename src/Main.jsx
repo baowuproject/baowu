@@ -2,8 +2,9 @@ import { Layout,Row, Col } from 'antd';
 import React, {Component} from 'react'
 import LeftSider from './LeftSider'
 import RightSider from './RightSider'
-import Grid from '@material-ui/core/Grid';
 import Navigation from './Navigation'
+import NnetWorkChart from './NnetWorkChart'
+
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -41,7 +42,9 @@ class Main extends Component{
                                 </Row>
                                 <Row>
                                     <Col span={24}>
-                                    hhh
+                                        <div style={{width:"100%", height:"100%"}}>
+                                        <NnetWorkChart/>
+                                        </div>
                                     </Col>
                                 </Row>
                                 Content
