@@ -41,8 +41,11 @@ class Main extends Component{
                                     </Col>
                                 </Row>
                                 <Row>
-                                    <Col span={24}>
-                                        <div style={{width:"100%", height:"100%"}}>
+                                    <Col span={4}>
+                                        col-12
+                                    </Col>
+                                    <Col span={20}>
+                                        <div style={{width:"100%", height:"500px"}}>
                                         <NnetWorkChart/>
                                         </div>
                                     </Col>

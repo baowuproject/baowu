@@ -1,0 +1,171 @@
+{
+  "positionX1": 400,
+  "option": {
+    "title": {
+      "text": "Graph 简单示例"
+    },
+    "tooltip": {},
+    "animationDurationUpdate": 1500,
+    "animationEasingUpdate": "quinticInOut",
+    "series": [
+      {
+        "type": "graph",
+        "layout": "none",
+        "symbolSize": 40,
+        "roam": true,
+        "color": "blue",
+        "label": {
+          "normal": {
+            "show": true
+          }
+        },
+        "edgeSymbol": [
+          "circle",
+          "arrow"
+        ],
+        "": [
+          4,
+          10
+        ],
+        "edgeLabel": {
+          "normal": {
+            "textStyle": {
+              "fontSize": 20
+            }
+          }
+        },
+        "lineStyle": {
+          "normal": {
+            "opacity": 0.9,
+            "width": 2,
+            "curveness": 0
+          }
+        }
+      }
+    ]
+  },
+  "nodeLayer0": [
+    {
+      "name": "节点-1",
+      "y": 150,
+      "symbolSize": 0
+    },{
+      "name": "节点-2",
+      "y": 200,
+      "symbolSize": 0
+    },{
+      "name": "节点-3",
+      "y": 250,
+      "symbolSize": 0
+    },{
+      "name": "节点-4",
+      "y": 300,
+      "symbolSize": 0
+    },{
+      "name": "节点-5",
+      "y": 350,
+      "symbolSize": 0
+    },{
+      "name": "节点-6",
+      "y": 400,
+      "symbolSize": 0
+    }
+  ],
+  "nodeLayer1": [
+    {
+      "name": "节点1",
+      "y": 150
+    },
+    {
+      "name": "节点2",
+      "y": 200
+    },
+    {
+      "name": "节点3",
+      "y": 250
+    },
+    {
+      "name": "节点4",
+      "y": 300
+    },
+    {
+      "name": "节点5",
+      "y": 350
+    },
+    {
+      "name": "节点6",
+      "y": 400
+    }
+  ],
+  "nodeLayer2": [
+    {
+      "name": "节点7",
+      "y": 110
+    },
+    {
+      "name": "节点8",
+      "y": 160
+    },
+    {
+      "name": "节点9",
+      "y": 210
+    },
+    {
+      "name": "节点10",
+      "y": 260
+    },
+    {
+      "name": "节点11",
+      "y": 310
+    },
+    {
+      "name": "节点12",
+      "y": 360
+    },
+    {
+      "name": "节点13",
+      "y": 410
+    },
+    {
+      "name": "节点14",
+      "y": 460
+    }
+  ],
+  "nodeLayer3": [
+    {
+      "name": "节点15",
+      "y": 160
+    },
+    {
+      "name": "节点16",
+      "y": 240
+    },
+    {
+      "name": "节点17",
+      "y": 320
+    },
+    {
+      "name": "节点18",
+      "y": 400
+    }
+  ],
+  "nodeLayer4": [
+    {
+      "name": "节点-15",
+      "y": 160,
+      "symbolSize": 0
+    },{
+      "name": "节点-16",
+      "y": 240,
+      "symbolSize": 0
+    },{
+      "name": "节点-17",
+      "y": 320,
+      "symbolSize": 0
+    },{
+      "name": "节点-18",
+      "y": 400,
+      "symbolSize": 0
+    }
+  ]
+}
