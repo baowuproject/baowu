@@ -4,7 +4,7 @@ import LeftSider from './LeftSider'
 import RightSider from './RightSider'
 import Navigation from './Navigation'
 import NnetWorkChart from './NnetWorkChart'
-
+import DataList from './DataList'
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -42,7 +42,7 @@ class Main extends Component{
                                 </Row>
                                 <Row>
                                     <Col span={4}>
-                                        col-12
+                                        <DataList/>
                                     </Col>
                                     <Col span={20}>
                                         <div style={{width:"100%", height:"500px"}}>

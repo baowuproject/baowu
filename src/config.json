@@ -12,7 +12,7 @@
         "type": "graph",
         "layout": "none",
         "symbolSize": 40,
-        "roam": true,
+        "roam": false,
         "color": "blue",
         "label": {
           "normal": {
