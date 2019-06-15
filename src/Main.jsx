@@ -47,8 +47,6 @@ class Main extends Component {
                     </div>
 
 
-
-
                     {/*<div style={{*/}
                     {/*    width: "5%",*/}
                     {/*    height: "2%",*/}
@@ -126,6 +124,138 @@ class Main extends Component {
                     </div>
 
                     <div style={{
+                        width: "2%",
+                        height: "3%",
+                        position: "absolute",
+                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "18%",
+                        left: "88.5%",
+                    }}>
+                    </div>
+
+
+                    <div style={{
+                        width: "14.35%",
+                        height: "6%",
+                        position: "absolute",
+                        // backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "16%",
+                        left: "85%",
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            marginTop: "8%",
+                            marginLeft: "40%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "1.2vw",
+                        }}>
+                            正常
+                        </span>
+                    </div>
+                    <div style={{
+                        width: "2%",
+                        height: "3%",
+                        position: "absolute",
+                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "23%",
+                        left: "88.5%",
+                    }}>
+                    </div>
+                    <div style={{
+                        width: "14.35%",
+                        height: "6%",
+                        position: "absolute",
+                        // backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "21.3%",
+                        left: "85%",
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            marginTop: "8%",
+                            marginLeft: "40%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "1.2vw",
+                        }}>
+                            不平衡
+                        </span>
+                    </div>
+                    <div style={{
+                        width: "2%",
+                        height: "3%",
+                        position: "absolute",
+                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "28.6%",
+                        left: "88.5%",
+                    }}>
+                    </div>
+                    <div style={{
+                        width: "14.35%",
+                        height: "6%",
+                        position: "absolute",
+                        // backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "26.8%",
+                        left: "85%",
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            marginTop: "8%",
+                            marginLeft: "40%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "1.2vw",
+                        }}>
+                            不对中
+                        </span>
+                    </div>
+                    <div style={{
+                        width: "2%",
+                        height: "3%",
+                        position: "absolute",
+                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "33.8%",
+                        left: "88.5%",
+                    }}>
+                    </div>
+                    <div style={{
+                        width: "14.35%",
+                        height: "6%",
+                        position: "absolute",
+                        // backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "32%",
+                        left: "85%",
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            marginTop: "8%",
+                            marginLeft: "40%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "1.2vw",
+                        }}>
+                            碰磨
+                        </span>
+                    </div>
+
+
+                    <div style={{
                         width: "14.77%",
                         height: "5%",
                         position: "absolute",
@@ -146,29 +276,69 @@ class Main extends Component {
                             故障概率
                         </span>
                     </div>
-                    {/*<div style={{*/}
-                    {/*    width: "12%",*/}
-                    {/*    height: "21%",*/}
-                    {/*    position: "absolute",*/}
-                    {/*    backgroundImage: "url('./static/rightSider/topCutLine.png')",*/}
-                    {/*    backgroundRepeat: "no-repeat",*/}
-                    {/*    backgroundSize: "cover",*/}
-                    {/*    top: "44%",*/}
-                    {/*    left: "86%",*/}
-                    {/*}}>*/}
-                    {/*</div>*/}
-                    {/*<div style={{*/}
-                    {/*    width: "4%",*/}
-                    {/*    height: "4%",*/}
-                    {/*    position: "absolute",*/}
-                    {/*    // backgroundImage: "url('./static/rightSider/tag.png')",*/}
-                    {/*    // backgroundRepeat: "no-repeat",*/}
-                    {/*    // backgroundSize: "cover",*/}
-                    {/*    top: "65.4%",*/}
-                    {/*    left: "88%",*/}
-                    {/*    zIndex:2*/}
-                    {/*}}>*/}
-                    {/*</div>*/}
+                    <div style={{
+                        width: "14.35%",
+                        height: "6%",
+                        position: "absolute",
+                        // backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "46.3%",
+                        left: "83%",
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            marginTop: "8%",
+                            marginLeft: "40%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "1.2vw",
+                        }}>
+                            不平衡:
+                        </span>
+                    </div>
+                    <div style={{
+                        width: "14.35%",
+                        height: "6%",
+                        position: "absolute",
+                        // backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "51.3%",
+                        left: "83%",
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            marginTop: "8%",
+                            marginLeft: "40%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "1.2vw",
+                        }}>
+                            不对中:
+                        </span>
+                    </div>
+                    <div style={{
+                        width: "14.35%",
+                        height: "6%",
+                        position: "absolute",
+                        // backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "56.7%",
+                        left: "83.3%",
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            marginTop: "8%",
+                            marginLeft: "40%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "1.2vw",
+                        }}>
+                            碰磨:
+                        </span>
+                    </div>
                     <div style={{
                         width: "13%",
                         height: "6%",
@@ -190,39 +360,428 @@ class Main extends Component {
                             故障描述
                         </span>
                     </div>
+                    <div style={{
+                        width: "14.35%",
+                        height: "6%",
+                        position: "absolute",
+                        backgroundImage: "url('./static/leftSider/wrong.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "19.5%",
+                        left: "0.6%",
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            marginTop: "8%",
+                            marginLeft: "26%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "1.2vw",
+                        }}>
+                            透平轴前振动
+                        </span>
+                    </div>
+                    <div style={{
+                        width: "2%",
+                        height: "3%",
+                        position: "absolute",
+                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "26.2%",
+                        left: "5%",
+                    }}>
+                    </div>
+
+                    <div style={{
+                        width: "14.35%",
+                        height: "6%",
+                        position: "absolute",
+                        // backgroundImage: "url('./static/leftSider/wrong.png')",
+                        // backgroundRepeat: "no-repeat",
+                        // backgroundSize: "cover",
+                        top: "24.4%",
+                        left: "0.6%",
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            marginTop: "8%",
+                            marginLeft: "45%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "1.2vw",
+                        }}>
+                            水平
+                        </span>
+                    </div>
+                    <div style={{
+                        width: "2%",
+                        height: "3%",
+                        position: "absolute",
+                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "30.8%",
+                        left: "5%",
+                    }}>
+                    </div>
+                    <div style={{
+                        width: "14.35%",
+                        height: "6%",
+                        position: "absolute",
+                        // backgroundImage: "url('./static/leftSider/wrong.png')",
+                        // backgroundRepeat: "no-repeat",
+                        // backgroundSize: "cover",
+                        top: "29%",
+                        left: "0.6%",
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            marginTop: "8%",
+                            marginLeft: "45%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "1.2vw",
+                        }}>
+                            垂直
+                        </span>
+                    </div>
+                    <div style={{
+                        width: "14.35%",
+                        height: "6%",
+                        position: "absolute",
+                        backgroundImage: "url('./static/leftSider/wrong.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "36%",
+                        left: "0.6%",
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            marginTop: "8%",
+                            marginLeft: "26%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "1.2vw",
+                        }}>
+                            透平轴后振动
+                        </span>
+                    </div>
+
+                    <div style={{
+                        width: "2%",
+                        height: "3%",
+                        position: "absolute",
+                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "42.8%",
+                        left: "5%",
+                    }}>
+                    </div>
+                    <div style={{
+                        width: "14.35%",
+                        height: "6%",
+                        position: "absolute",
+                        // backgroundImage: "url('./static/leftSider/wrong.png')",
+                        // backgroundRepeat: "no-repeat",
+                        // backgroundSize: "cover",
+                        top: "40.8%",
+                        left: "0.6%",
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            marginTop: "8%",
+                            marginLeft: "45%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "1.2vw",
+                        }}>
+                            水平
+                        </span>
+                    </div>
+                    <div style={{
+                        width: "2%",
+                        height: "3%",
+                        position: "absolute",
+                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "47.4%",
+                        left: "5%",
+                    }}>
+                    </div>
+
+                    <div style={{
+                        width: "14.35%",
+                        height: "6%",
+                        position: "absolute",
+                        // backgroundImage: "url('./static/leftSider/wrong.png')",
+                        // backgroundRepeat: "no-repeat",
+                        // backgroundSize: "cover",
+                        top: "45.5%",
+                        left: "0.6%",
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            marginTop: "8%",
+                            marginLeft: "45%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "1.2vw",
+                        }}>
+                            垂直
+                        </span>
+                    </div>
+                    <div style={{
+                        width: "14.35%",
+                        height: "6%",
+                        position: "absolute",
+                        backgroundImage: "url('./static/leftSider/wrong.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "52.5%",
+                        left: "0.6%",
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            marginTop: "8%",
+                            marginLeft: "26%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "1.2vw",
+                        }}>
+                            发动机轴前振动
+                        </span>
+                    </div>
+
+                    <div style={{
+                        width: "2%",
+                        height: "3%",
+                        position: "absolute",
+                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "59.2%",
+                        left: "5%",
+                    }}>
+                    </div>
+                    <div style={{
+                        width: "14.35%",
+                        height: "6%",
+                        position: "absolute",
+                        // backgroundImage: "url('./static/leftSider/wrong.png')",
+                        // backgroundRepeat: "no-repeat",
+                        // backgroundSize: "cover",
+                        top: "57.2%",
+                        left: "0.6%",
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            marginTop: "8%",
+                            marginLeft: "45%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "1.2vw",
+                        }}>
+                            水平
+                        </span>
+                    </div>
+                    <div style={{
+                        width: "2%",
+                        height: "3%",
+                        position: "absolute",
+                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "63.8%",
+                        left: "5%",
+                    }}>
+                    </div>
+                    <div style={{
+                        width: "14.35%",
+                        height: "6%",
+                        position: "absolute",
+                        // backgroundImage: "url('./static/leftSider/wrong.png')",
+                        // backgroundRepeat: "no-repeat",
+                        // backgroundSize: "cover",
+                        top: "61.9%",
+                        left: "0.6%",
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            marginTop: "8%",
+                            marginLeft: "45%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "1.2vw",
+                        }}>
+                            垂直
+                        </span>
+                    </div>
+                    <div style={{
+                        width: "14.35%",
+                        height: "6%",
+                        position: "absolute",
+                        backgroundImage: "url('./static/leftSider/wrong.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "69%",
+                        left: "0.6%",
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            marginTop: "8%",
+                            marginLeft: "26%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "1.2vw",
+                        }}>
+                            发动机轴后振动
+                        </span>
+                    </div>
+                    <div style={{
+                        width: "2%",
+                        height: "3%",
+                        position: "absolute",
+                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "75.7%",
+                        left: "5%",
+                    }}>
+                    </div>
+                    <div style={{
+                        width: "14.35%",
+                        height: "6%",
+                        position: "absolute",
+                        // backgroundImage: "url('./static/leftSider/wrong.png')",
+                        // backgroundRepeat: "no-repeat",
+                        // backgroundSize: "cover",
+                        top: "73.8%",
+                        left: "0.6%",
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            marginTop: "8%",
+                            marginLeft: "45%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "1.2vw",
+                        }}>
+                            水平
+                        </span>
+                    </div>
+                    <div style={{
+                        width: "2%",
+                        height: "3%",
+                        position: "absolute",
+                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "80.3%",
+                        left: "5%",
+                    }}>
+                    </div>
+                    <div style={{
+                        width: "14.35%",
+                        height: "6%",
+                        position: "absolute",
+                        // backgroundImage: "url('./static/leftSider/wrong.png')",
+                        // backgroundRepeat: "no-repeat",
+                        // backgroundSize: "cover",
+                        top: "78.4%",
+                        left: "0.6%",
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            marginTop: "8%",
+                            marginLeft: "45%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "1.2vw",
+                        }}>
+                            垂直
+                        </span>
+                    </div>
+
+
+
+                    <div style={{
+                        width: "14.35%",
+                        height: "6%",
+                        position: "absolute",
+                        // backgroundImage: "url('./static/leftSider/wrong.png')",
+                        // backgroundRepeat: "no-repeat",
+                        // backgroundSize: "cover",
+                        top: "63%",
+                        left: "19%",
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            marginTop: "8%",
+                            marginLeft: "26%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "1vw",
+                        }}>
+                            X幅值:{}
+                            <br/>
+                            X相位:{}
+                            <br/>
+                            Y幅值:{}
+                            <br/>
+                            Y相位:{}
+                            <br/>
+                            长轴:{}
+                            <br/>
+                            短轴:{}
+                            <br/>
+                            偏心率:{}
+                            <br/>
+                            倾斜角:{}
+                            <br/>
+                            初相角:{}
+                            <br/>
+                            旋向:{}
+                            <br/>
+                        </span>
+                    </div>
+
+
 
                     <Button type={"link"} size={"large"}
-                            style={{width: "10%", position:"absolute", top:"10.5%", left:"17.5%"}}> <span style={{
+                            style={{width: "10%", position: "absolute", top: "10.5%", left: "17.5%"}}> <span style={{
                         color: "white",
                         backgroundColor: "rgba(0,0,0,0)",
                         width: "100%",
                         height: "100%",
-                        fontSize:'1vw'
+                        fontSize: '1vw'
                     }}>透平轴前截面</span></Button>
 
                     <Button type={"link"} size={"large"}
-                            style={{width: "10%", position:"absolute", top:"10.5%", left:"24.1%"}}> <span style={{
+                            style={{width: "10%", position: "absolute", top: "10.5%", left: "24.1%"}}> <span style={{
                         color: "white",
                         backgroundColor: "rgba(0,0,0,0)",
                         width: "100%",
                         height: "100%",
-                        fontSize:'1vw'
+                        fontSize: '1vw'
                     }}>透平轴后截面</span></Button>
                     <Button type={"link"} size={"large"}
-                            style={{width: "10%", position:"absolute", top:"10.5%", left:"30.9%"}}> <span style={{
+                            style={{width: "10%", position: "absolute", top: "10.5%", left: "30.9%"}}> <span style={{
                         color: "white",
                         backgroundColor: "rgba(0,0,0,0)",
                         width: "100%",
                         height: "100%",
-                        fontSize:'1vw'
+                        fontSize: '1vw'
                     }}>透平轴前振动</span></Button>
                     <Button type={"link"} size={"large"}
-                            style={{width: "10%", position:"absolute", top:"10.5%", left:"37.7%"}}> <span style={{
+                            style={{width: "10%", position: "absolute", top: "10.5%", left: "37.7%"}}> <span style={{
                         color: "white",
                         backgroundColor: "rgba(0,0,0,0)",
                         width: "100%",
                         height: "100%",
-                        fontSize:'1vw'
+                        fontSize: '1vw'
                     }}>透平轴前振动</span></Button>
 
 
