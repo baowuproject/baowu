@@ -33,7 +33,7 @@ class Main extends Component {
                     // zoom: 1,
                     position: "relative"
                 }}>
-                    <img id="pic" src="./static/main.jpg" style={{width: "100%"}}/>
+                    <img id="pic" src="./static/main1.jpg" style={{width: "100%"}}/>
                     <div style={{
                         textAlign: "center",
                         marginTop: "1%",
@@ -46,46 +46,56 @@ class Main extends Component {
                         </span>
                     </div>
                     <div style={{
-                        width: "14.2%",
-                        height: "72%",
+                        width: "6%",
+                        height: "2%",
                         position: "absolute",
-                        backgroundImage: "url('./static/leftSider/bottom.png')",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        top: "16%",
-                        left: "0.8%"
+                        top: "10%",
+                        left: "20%",
+                        color: "white"
                     }}>
-                        {/*<img src="./static/leftSider/bottom.png" alt=""/>*/}
+                        透平轴前截面
                     </div>
-                    <div style={{
-                        width: "14.8%",
-                        height: "72%",
-                        position: "absolute",
-                        backgroundImage: "url('./static/leftSider/cutLine.png')",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        top: "21.5%",
-                        left: "0.2%"
-                    }}>
-                    </div>
-                    <div style={{
-                        width: "14%",
-                        height: "30%",
-                        position: "absolute",
-                        backgroundImage: "url('./static/centerBottom/dataFlow.png')",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        top: "63.5%",
-                        left: "29%"
-                    }}>
-                    </div>
+                    {/*<div style={{*/}
+                    {/*    width: "14.2%",*/}
+                    {/*    height: "72%",*/}
+                    {/*    position: "absolute",*/}
+                    {/*    backgroundImage: "url('./static/leftSider/bottom.png')",*/}
+                    {/*    backgroundRepeat: "no-repeat",*/}
+                    {/*    backgroundSize: "cover",*/}
+                    {/*    top: "16%",*/}
+                    {/*    left: "0.8%"*/}
+                    {/*}}>*/}
+                    {/*    /!*<img src="./static/leftSider/bottom.png" alt=""/>*!/*/}
+                    {/*</div>*/}
+                    {/*<div style={{*/}
+                    {/*    width: "14.8%",*/}
+                    {/*    height: "72%",*/}
+                    {/*    position: "absolute",*/}
+                    {/*    backgroundImage: "url('./static/leftSider/cutLine.png')",*/}
+                    {/*    backgroundRepeat: "no-repeat",*/}
+                    {/*    backgroundSize: "cover",*/}
+                    {/*    top: "21.5%",*/}
+                    {/*    left: "0.2%"*/}
+                    {/*}}>*/}
+                    {/*</div>*/}
+                    {/*<div style={{*/}
+                    {/*    width: "14%",*/}
+                    {/*    height: "30%",*/}
+                    {/*    position: "absolute",*/}
+                    {/*    backgroundImage: "url('./static/centerBottom/dataFlow.png')",*/}
+                    {/*    backgroundRepeat: "no-repeat",*/}
+                    {/*    backgroundSize: "cover",*/}
+                    {/*    top: "63.5%",*/}
+                    {/*    left: "29%"*/}
+                    {/*}}>*/}
+                    {/*</div>*/}
                     <div style={{
                         width: "14.77%",
                         height: "5%",
                         position: "absolute",
-                        backgroundImage: "url('./static/rightSider/bottom.png')",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
+                        // backgroundImage: "url('./static/rightSider/bottom.png')",
+                        // backgroundRepeat: "no-repeat",
+                        // backgroundSize: "cover",
                         top: "10%",
                         left: "85.38%",
                     }}>
@@ -105,9 +115,9 @@ class Main extends Component {
                         width: "14.77%",
                         height: "5%",
                         position: "absolute",
-                        backgroundImage: "url('./static/rightSider/bottom2.png')",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
+                        // backgroundImage: "url('./static/rightSider/bottom2.png')",
+                        // backgroundRepeat: "no-repeat",
+                        // backgroundSize: "cover",
                         top: "40%",
                         left: "85.38%"
                     }}>
@@ -122,46 +132,46 @@ class Main extends Component {
                             故障概率
                         </span>
                     </div>
-                    <div style={{
-                        width: "12%",
-                        height: "21%",
-                        position: "absolute",
-                        backgroundImage: "url('./static/rightSider/topCutLine.png')",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        top: "44%",
-                        left: "86%",
-                    }}>
-                    </div>
-                    <div style={{
-                        width: "4%",
-                        height: "4%",
-                        position: "absolute",
-                        backgroundImage: "url('./static/rightSider/tag.png')",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        top: "65.4%",
-                        left: "88%",
-                        zIndex:2
-                    }}>
-                    </div>
+                    {/*<div style={{*/}
+                    {/*    width: "12%",*/}
+                    {/*    height: "21%",*/}
+                    {/*    position: "absolute",*/}
+                    {/*    backgroundImage: "url('./static/rightSider/topCutLine.png')",*/}
+                    {/*    backgroundRepeat: "no-repeat",*/}
+                    {/*    backgroundSize: "cover",*/}
+                    {/*    top: "44%",*/}
+                    {/*    left: "86%",*/}
+                    {/*}}>*/}
+                    {/*</div>*/}
+                    {/*<div style={{*/}
+                    {/*    width: "4%",*/}
+                    {/*    height: "4%",*/}
+                    {/*    position: "absolute",*/}
+                    {/*    // backgroundImage: "url('./static/rightSider/tag.png')",*/}
+                    {/*    // backgroundRepeat: "no-repeat",*/}
+                    {/*    // backgroundSize: "cover",*/}
+                    {/*    top: "65.4%",*/}
+                    {/*    left: "88%",*/}
+                    {/*    zIndex:2*/}
+                    {/*}}>*/}
+                    {/*</div>*/}
                     <div style={{
                         width: "13%",
                         height: "6%",
                         position: "absolute",
-                        backgroundImage: "url('./static/rightSider/description.png')",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
+                        // backgroundImage: "url('./static/rightSider/description.png')",
+                        // backgroundRepeat: "no-repeat",
+                        // backgroundSize: "cover",
                         top: "63.5%",
                         left: "86%"
                     }}>
                         <span style={{
                             height: "100%",
-                            marginTop: "12%",
+                            marginTop: "14%",
                             color: "white",
                             position: "absolute",
                             fontSize: "large",
-                            marginLeft: "40%"
+                            marginLeft: "35%"
                         }}>
                             故障描述
                         </span>
