@@ -45,16 +45,30 @@ class Main extends Component {
                         XXXX
                         </span>
                     </div>
-                    <div style={{
-                        width: "6%",
-                        height: "2%",
-                        position: "absolute",
-                        top: "10%",
-                        left: "20%",
-                        color: "white"
-                    }}>
-                        透平轴前截面
-                    </div>
+
+
+
+
+                    {/*<div style={{*/}
+                    {/*    width: "5%",*/}
+                    {/*    height: "2%",*/}
+                    {/*    position: "absolute",*/}
+                    {/*    top: "9.4%",*/}
+                    {/*    left: "20.5%",*/}
+                    {/*    // fontSize: "10%",*/}
+                    {/*    color: "white",*/}
+                    {/*}}>*/}
+                    {/*    <p style={{*/}
+                    {/*        height: "100%",*/}
+                    {/*        marginTop: "10%",*/}
+                    {/*        color: "white",*/}
+                    {/*        position: "absolute",*/}
+                    {/*        // font-size: "50%",*/}
+                    {/*        marginLeft: "0%"*/}
+                    {/*    }}>*/}
+                    {/*    透平轴前截面*/}
+                    {/*    </p>*/}
+                    {/*</div>*/}
                     {/*<div style={{*/}
                     {/*    width: "14.2%",*/}
                     {/*    height: "72%",*/}
@@ -104,7 +118,7 @@ class Main extends Component {
                             marginTop: "8%",
                             color: "white",
                             position: "absolute",
-                            fontSize: "large",
+                            fontSize: "1.2vw",
                             marginLeft: "33%"
                         }}>
                             诊断结论
@@ -126,7 +140,7 @@ class Main extends Component {
                              marginTop: "8%",
                              color: "white",
                              position: "absolute",
-                             fontSize: "large",
+                             fontSize: "1.2vw",
                              marginLeft: "33%"
                          }}>
                             故障概率
@@ -170,12 +184,48 @@ class Main extends Component {
                             marginTop: "14%",
                             color: "white",
                             position: "absolute",
-                            fontSize: "large",
+                            fontSize: "1.2vw",
                             marginLeft: "35%"
                         }}>
                             故障描述
                         </span>
                     </div>
+
+                    <Button type={"link"} size={"large"}
+                            style={{width: "10%", position:"absolute", top:"10.5%", left:"17.5%"}}> <span style={{
+                        color: "white",
+                        backgroundColor: "rgba(0,0,0,0)",
+                        width: "100%",
+                        height: "100%",
+                        fontSize:'1vw'
+                    }}>透平轴前截面</span></Button>
+
+                    <Button type={"link"} size={"large"}
+                            style={{width: "10%", position:"absolute", top:"10.5%", left:"24.1%"}}> <span style={{
+                        color: "white",
+                        backgroundColor: "rgba(0,0,0,0)",
+                        width: "100%",
+                        height: "100%",
+                        fontSize:'1vw'
+                    }}>透平轴后截面</span></Button>
+                    <Button type={"link"} size={"large"}
+                            style={{width: "10%", position:"absolute", top:"10.5%", left:"30.9%"}}> <span style={{
+                        color: "white",
+                        backgroundColor: "rgba(0,0,0,0)",
+                        width: "100%",
+                        height: "100%",
+                        fontSize:'1vw'
+                    }}>透平轴前振动</span></Button>
+                    <Button type={"link"} size={"large"}
+                            style={{width: "10%", position:"absolute", top:"10.5%", left:"37.7%"}}> <span style={{
+                        color: "white",
+                        backgroundColor: "rgba(0,0,0,0)",
+                        width: "100%",
+                        height: "100%",
+                        fontSize:'1vw'
+                    }}>透平轴前振动</span></Button>
+
+
                     {/*<Row>*/}
                     {/*    <Col span={24}>*/}
                     {/*    </Col>*/}
