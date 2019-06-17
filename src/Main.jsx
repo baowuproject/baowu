@@ -68,13 +68,16 @@ class Main extends Component {
                     <img id="pic" src="./static/main1.jpg" style={{width: "100%"}}/>
                     <div style={{
                         textAlign: "center",
-                        marginTop: "1%",
+                        marginTop: "0.5%",
                         position: "absolute",
                         top: 0,
-                        left: "50%"
+                        left: "35%"
                     }}>
-                        <span>
-                        XXXX
+                        <span style={{
+                            color:"white",
+                            fontSize:"2vw"
+                        }}>
+                        高炉煤气余压回收透平发电装置(TRT)
                         </span>
                     </div>
 
@@ -126,13 +129,14 @@ class Main extends Component {
                         width: "14%",
                         height: "30%",
                         position: "absolute",
-                        backgroundImage: "url('./static/centerBottom/dataFlow.png')",
+                        backgroundImage: "url('./static/centerBottom/dataFlow1.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                         top: "63.5%",
                         left: "29%"
                     }}>
                     </div>
+                        {/*<img src="./static/centerBottom/dataFlow.png" alt=""/>*/}
                     <div style={{
                         width: "14.77%",
                         height: "5%",
@@ -400,6 +404,25 @@ class Main extends Component {
                             marginLeft: "35%"
                         }}>
                             故障描述
+                        </span>
+                    </div>
+                    <div style={{
+                        width: "12%",
+                        height: "18%",
+                        position: "absolute",
+                        top: "73.5%",
+                        left: "86.7%",
+                        // backgroundColor:"white",
+                        overflow:"scroll"
+                    }}>
+                        <span style={{
+                            height: "100%",
+                            color: "white",
+                            position: "absolute",
+                            fontSize: "0.9vw",
+                            margin:"auto"
+                        }}>
+                            {this.state.Section1_Fault_Describe}
                         </span>
                     </div>
                     <div style={{
@@ -781,25 +804,25 @@ class Main extends Component {
                             position: "absolute",
                             fontSize: "1vw",
                         }}>
-                            X幅值:{this.state.Section1_1X_Amp}um
+                            X幅值: {this.state.Section1_1X_Amp}um
                             <br/>
-                            X相位:{this.state.Section1_1X_Amp}度
+                            X相位: {this.state.Section1_1X_Amp}˚
                             <br/>
-                            Y幅值:{this.state.Section1_1X_Amp}um
+                            Y幅值: {this.state.Section1_1X_Amp}um
                             <br/>
-                            Y相位:{this.state.Section1_1X_Amp}度
+                            Y相位: {this.state.Section1_1X_Amp}˚
                             <br/>
-                            长轴:{this.state.Section1_Holo_Long}um
+                            长轴: {this.state.Section1_Holo_Long}um
                             <br/>
-                            短轴:{this.state.Section1_Holo_Short}um
+                            短轴: {this.state.Section1_Holo_Short}um
                             <br/>
-                            偏心率:{this.state.Section1_Holo_Ecc}
+                            偏心率: {this.state.Section1_Holo_Ecc}
                             <br/>
-                            倾斜角:{this.state.Section1_Holo_Angle}度
+                            倾斜角: {this.state.Section1_Holo_Angle}˚
                             <br/>
-                            初相角:{this.state.Section1_Holo_OP}度
+                            初相角: {this.state.Section1_Holo_OP}˚
                             <br/>
-                            旋向:{this.state.Section1_Holo_Direction}
+                            旋向: {this.state.Section1_Holo_Direction}
                             <br/>
                         </span>
                     </div>
@@ -882,6 +905,18 @@ class Main extends Component {
                         color: 'white'
                     }}>
                         三维全息谱图
+                    </p>
+
+                    <p style={{
+                        width: "10%",
+                        height: "10%",
+                        position: "absolute",
+                        top: "35.3%",
+                        left: "64.8%",
+                        fontSize: "1vm",
+                        color: 'white'
+                    }}>
+                        机组总貌图
                     </p>
 
                     {/*<Row>*/}
