@@ -6,6 +6,7 @@ import Navigation from './Navigation'
 import NnetWorkChart from './NnetWorkChart'
 import DataList from './DataList'
 
+var echarts = require('echarts');
 const {Header, Footer, Sider, Content} = Layout;
 
 
@@ -46,6 +47,107 @@ class Main extends Component {
     //     res = await res.json()
     //
     // }
+
+    componentDidMount() {
+        let app = {}
+        let symbolSize = 4;
+        let data = [
+            {value:[-1.1591473	,0.52753085]},
+            {value:[-1.1307307	,0.36183468]},
+            {value:[-1.0551773	,0.18105464]},
+            {value:[-0.93563646	,-0.00727307]},
+            {value:[-0.7770916	,-0.1952978]},
+            {value:[-0.586152	,-0.3751809]},
+            {value:[-0.37077734	,-0.53942376]},
+            {value:[-0.13994549	,-0.6811797]},
+            {value:[0.096719794	,-0.794539]},
+            {value:[0.3293531	,-0.87477624]},
+            {value:[0.5482566	,-0.9185465]},
+            {value:[0.74430484	,-0.9240251]},
+            {value:[0.90932506	,-0.89098376]},
+            {value:[1.0364381	,-0.82079977]},
+            {value:[1.1203451	,-0.71639866]},
+            {value:[1.1575478	,-0.5821332]},
+            {value:[1.1464957	,-0.42360014]},
+            {value:[1.0876492	,-0.24740843]},
+            {value:[0.98346186	,-0.060902957]},
+            {value:[0.83827674	,0.12814139]},
+            {value:[0.65814614	,0.31184387]},
+            {value:[0.45057935	,0.48254648]},
+            {value:[0.22422914	,0.63313305]},
+            {value:[-0.011468535	,0.757326]},
+            {value:[-0.24668813	,0.8499484]},
+            {value:[-0.471624	,0.9071387]},
+            {value:[-0.67689914	,0.92651296]},
+            {value:[-0.85395706	,0.90726334]},
+            {value:[-0.99541503	,0.8501924]},
+            {value:[-1.095377	,0.75767934]},
+            {value:[-1.1496756	,0.63358086]},
+            {value:[-1.1560476	,0.48307005]},
+            {value:[-1.1142272	,0.3124215]},
+
+
+        ];
+        var myChart = echarts.init(document.getElementById('test'));
+
+
+        myChart.setOption({
+
+            tooltip: {
+                triggerOn: 'none',
+                formatter: function (params) {
+                    return 'X: ' + params.data[0].toFixed(2) + '<br>Y: ' + params.data[1].toFixed(2);
+                }
+            },
+            grid: {},
+            xAxis: {
+
+                show: false
+            },
+            yAxis: {
+
+                show: false
+            },
+
+            series: [
+                {
+                    id: 'a',
+                    type: 'line',
+                    smooth: true,
+                    symbolSize: symbolSize,
+                    data: data,
+                    symbol: 'circle',
+
+                    color: "rgb(17,238,238)"
+                }
+            ]
+        })
+        let count = 0
+        app.timeTicket = setInterval(function () {
+
+            let index = count % data.length
+
+            console.log(index, data[index]["value"])
+            data[index]["itemStyle"] = {
+
+                "color": "red"
+            }
+            count += 1
+            myChart.setOption({
+                    series: [{
+                        data: data
+                    }]
+
+                }
+            )
+            data[index]["itemStyle"] = {
+
+                "color": "rgb(17,238,238)"
+            };
+        }, 500);
+
+
+    }
 
     render() {
         return (
@@ -923,6 +1025,19 @@ class Main extends Component {
                     }}>
                         机组总貌图
                     </p>
+                    <div id="test"
+                         style={{
+
+                             width: "10%",
+                             height: 150,
+                             position: "absolute",
+                             top: "19.5%",
+                             left: "35.2%",
+
+
+                         }}>
+
+                    </div>
 
                     {/*<Row>*/}
                     {/*    <Col span={24}>*/}
