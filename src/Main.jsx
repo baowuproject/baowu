@@ -10,6 +10,38 @@ const {Header, Footer, Sider, Content} = Layout;
 
 
 class Main extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            leftLineOneSP: 1,
+            leftLineOneCZ: 0,
+            leftLineTwoSP: 1,
+            leftLineTwoCZ: 1,
+            leftLineThreeSP: 1,
+            leftLineThreeCZ: 1,
+            leftLineFourSP: 1,
+            leftLineFourCZ: 1,
+            Section1_1X_Amp: 0,
+            Section1_1X_Phase: 0,
+            Section1_1Y_Amp: 0,
+            Section1_1Y_Phase: 0,
+            Section1_Holo_Long: 0,
+            Section1_Holo_Short: 0,
+            Section1_Holo_Ecc: 0,
+            Section1_Holo_Angle: 0,
+            Section1_Holo_OP: 0,
+            Section1_Holo_Direction: 0,
+            Section1_Conclusion: 3,
+            Section1_Bal_Pro: 0,
+            Section1_Alig_Pro: 0,
+            Section1_Rub_Pro: 0,
+            Section1_Fault_Describe: "assdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfsadf",
+
+
+
+        }
+    }
+
     render() {
         return (
 
@@ -90,17 +122,17 @@ class Main extends Component {
                     {/*    left: "0.2%"*/}
                     {/*}}>*/}
                     {/*</div>*/}
-                    {/*<div style={{*/}
-                    {/*    width: "14%",*/}
-                    {/*    height: "30%",*/}
-                    {/*    position: "absolute",*/}
-                    {/*    backgroundImage: "url('./static/centerBottom/dataFlow.png')",*/}
-                    {/*    backgroundRepeat: "no-repeat",*/}
-                    {/*    backgroundSize: "cover",*/}
-                    {/*    top: "63.5%",*/}
-                    {/*    left: "29%"*/}
-                    {/*}}>*/}
-                    {/*</div>*/}
+                    <div style={{
+                        width: "14%",
+                        height: "30%",
+                        position: "absolute",
+                        backgroundImage: "url('./static/centerBottom/dataFlow.png')",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        top: "63.5%",
+                        left: "29%"
+                    }}>
+                    </div>
                     <div style={{
                         width: "14.77%",
                         height: "5%",
@@ -123,17 +155,17 @@ class Main extends Component {
                         </span>
                     </div>
 
-                    <div style={{
-                        width: "2%",
-                        height: "3%",
-                        position: "absolute",
-                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        top: "18%",
-                        left: "88.5%",
-                    }}>
-                    </div>
+                    {/*<div style={{*/}
+                    {/*    width: "2%",*/}
+                    {/*    height: "3%",*/}
+                    {/*    position: "absolute",*/}
+                    {/*    backgroundImage: "url('./static/rightSider/wrongTag.png')",*/}
+                    {/*    backgroundRepeat: "no-repeat",*/}
+                    {/*    backgroundSize: "cover",*/}
+                    {/*    top: "18%",*/}
+                    {/*    left: "88.5%",*/}
+                    {/*}}>*/}
+                    {/*</div>*/}
 
 
                     <div style={{
@@ -157,17 +189,18 @@ class Main extends Component {
                             正常
                         </span>
                     </div>
-                    <div style={{
-                        width: "2%",
-                        height: "3%",
-                        position: "absolute",
-                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        top: "23%",
-                        left: "88.5%",
-                    }}>
-                    </div>
+                    {
+                        this.state.Section1_Conclusion === 1 ? <div style={{
+                                width: "2%",
+                                height: "3%",
+                                position: "absolute",
+                                backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                                backgroundRepeat: "no-repeat",
+                                backgroundSize: "cover",
+                                top: "23%",
+                                left: "88.5%",
+                            }}> </div>: null
+                    }
                     <div style={{
                         width: "14.35%",
                         height: "6%",
@@ -189,17 +222,22 @@ class Main extends Component {
                             不平衡
                         </span>
                     </div>
-                    <div style={{
-                        width: "2%",
-                        height: "3%",
-                        position: "absolute",
-                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        top: "28.6%",
-                        left: "88.5%",
-                    }}>
-                    </div>
+
+
+                    {
+                        this.state.Section1_Conclusion === 2 ?  <div style={{
+                            width: "2%",
+                            height: "3%",
+                            position: "absolute",
+                            backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "cover",
+                            top: "28.6%",
+                            left: "88.5%",
+                        }}>
+                        </div>: null
+                    }
+
                     <div style={{
                         width: "14.35%",
                         height: "6%",
@@ -221,17 +259,21 @@ class Main extends Component {
                             不对中
                         </span>
                     </div>
-                    <div style={{
-                        width: "2%",
-                        height: "3%",
-                        position: "absolute",
-                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        top: "33.8%",
-                        left: "88.5%",
-                    }}>
-                    </div>
+
+
+                    {
+                        this.state.Section1_Conclusion === 3 ? <div style={{
+                            width: "2%",
+                            height: "3%",
+                            position: "absolute",
+                            backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "cover",
+                            top: "33.8%",
+                            left: "88.5%",
+                        }}>
+                        </div>: null
+                    }
                     <div style={{
                         width: "14.35%",
                         height: "6%",
@@ -294,7 +336,7 @@ class Main extends Component {
                             position: "absolute",
                             fontSize: "1.2vw",
                         }}>
-                            不平衡:
+                            不平衡: {this.state.Section1_Bal_Pro}
                         </span>
                     </div>
                     <div style={{
@@ -315,7 +357,7 @@ class Main extends Component {
                             position: "absolute",
                             fontSize: "1.2vw",
                         }}>
-                            不对中:
+                            不对中: {this.state.Section1_Alig_Pro}
                         </span>
                     </div>
                     <div style={{
@@ -336,7 +378,7 @@ class Main extends Component {
                             position: "absolute",
                             fontSize: "1.2vw",
                         }}>
-                            碰磨:
+                            碰磨: {this.state.Section1_Rub_Pro}
                         </span>
                     </div>
                     <div style={{
@@ -361,18 +403,19 @@ class Main extends Component {
                         </span>
                     </div>
                     <div style={{
-                        width: "14.35%",
-                        height: "6%",
+                        width: "13.4%",
+                        height: "5%",
                         position: "absolute",
-                        backgroundImage: "url('./static/leftSider/wrong.png')",
+                        backgroundImage: this.state.leftLineOneSP || this.state.leftLineOneCZ ? "url('./static/leftSider/wrong.png')" :
+                            "url('./static/leftSider/right.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
-                        top: "19.5%",
-                        left: "0.6%",
+                        top: "21%",
+                        left: "1.55%",
                     }}>
                         <span style={{
                             height: "100%",
-                            marginTop: "8%",
+                            marginTop: "5%",
                             marginLeft: "26%",
                             color: "white",
                             position: "absolute",
@@ -385,13 +428,24 @@ class Main extends Component {
                         width: "2%",
                         height: "3%",
                         position: "absolute",
-                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundImage: this.state.leftLineOneSP ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                         top: "26.2%",
                         left: "5%",
                     }}>
                     </div>
+                    {/*<div style={{*/}
+                    {/*    width: "2%",*/}
+                    {/*    height: "3%",*/}
+                    {/*    position: "absolute",*/}
+                    {/*    backgroundImage: "url('./static/leftSider/green.png')",*/}
+                    {/*    backgroundRepeat: "no-repeat",*/}
+                    {/*    backgroundSize: "cover",*/}
+                    {/*    top: "26.2%",*/}
+                    {/*    left: "5%",*/}
+                    {/*}}>*/}
+                    {/*</div>*/}
 
                     <div style={{
                         width: "14.35%",
@@ -418,7 +472,7 @@ class Main extends Component {
                         width: "2%",
                         height: "3%",
                         position: "absolute",
-                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundImage: this.state.leftLineOneCZ ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                         top: "30.8%",
@@ -447,18 +501,19 @@ class Main extends Component {
                         </span>
                     </div>
                     <div style={{
-                        width: "14.35%",
-                        height: "6%",
+                        width: "13.4%",
+                        height: "5%",
                         position: "absolute",
-                        backgroundImage: "url('./static/leftSider/wrong.png')",
+                        backgroundImage: this.state.leftLineTwoSP || this.state.leftLineTwoCZ ? "url('./static/leftSider/wrong.png')" :
+                            "url('./static/leftSider/right.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
-                        top: "36%",
-                        left: "0.6%",
+                        top: "37.5%",
+                        left: "1.55%",
                     }}>
                         <span style={{
                             height: "100%",
-                            marginTop: "8%",
+                            marginTop: "5%",
                             marginLeft: "26%",
                             color: "white",
                             position: "absolute",
@@ -472,7 +527,7 @@ class Main extends Component {
                         width: "2%",
                         height: "3%",
                         position: "absolute",
-                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundImage: this.state.leftLineTwoSP ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                         top: "42.8%",
@@ -504,7 +559,7 @@ class Main extends Component {
                         width: "2%",
                         height: "3%",
                         position: "absolute",
-                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundImage: this.state.leftLineTwoCZ ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                         top: "47.4%",
@@ -534,19 +589,20 @@ class Main extends Component {
                         </span>
                     </div>
                     <div style={{
-                        width: "14.35%",
-                        height: "6%",
+                        width: "13.4%",
+                        height: "5%",
                         position: "absolute",
-                        backgroundImage: "url('./static/leftSider/wrong.png')",
+                        backgroundImage: this.state.leftLineThreeSP || this.state.leftLineThreeCZ ? "url('./static/leftSider/wrong.png')" :
+                            "url('./static/leftSider/right.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
-                        top: "52.5%",
-                        left: "0.6%",
+                        top: "53.5%",
+                        left: "1.55%",
                     }}>
                         <span style={{
                             height: "100%",
-                            marginTop: "8%",
-                            marginLeft: "26%",
+                            marginTop: "5%",
+                            marginLeft: "21%",
                             color: "white",
                             position: "absolute",
                             fontSize: "1.2vw",
@@ -559,7 +615,7 @@ class Main extends Component {
                         width: "2%",
                         height: "3%",
                         position: "absolute",
-                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundImage: this.state.leftLineThreeSP ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                         top: "59.2%",
@@ -591,7 +647,7 @@ class Main extends Component {
                         width: "2%",
                         height: "3%",
                         position: "absolute",
-                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundImage: this.state.leftLineThreeCZ ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                         top: "63.8%",
@@ -620,19 +676,20 @@ class Main extends Component {
                         </span>
                     </div>
                     <div style={{
-                        width: "14.35%",
-                        height: "6%",
+                        width: "13.4%",
+                        height: "5%",
                         position: "absolute",
-                        backgroundImage: "url('./static/leftSider/wrong.png')",
+                        backgroundImage: this.state.leftLineFourSP || this.state.leftLineFourCZ ? "url('./static/leftSider/wrong.png')" :
+                            "url('./static/leftSider/right.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
-                        top: "69%",
-                        left: "0.6%",
+                        top: "70%",
+                        left: "1.55%",
                     }}>
                         <span style={{
                             height: "100%",
-                            marginTop: "8%",
-                            marginLeft: "26%",
+                            marginTop: "5%",
+                            marginLeft: "21%",
                             color: "white",
                             position: "absolute",
                             fontSize: "1.2vw",
@@ -644,7 +701,7 @@ class Main extends Component {
                         width: "2%",
                         height: "3%",
                         position: "absolute",
-                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundImage: this.state.leftLineFourSP ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                         top: "75.7%",
@@ -676,7 +733,7 @@ class Main extends Component {
                         width: "2%",
                         height: "3%",
                         position: "absolute",
-                        backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                        backgroundImage: this.state.leftLineFourCZ ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                         top: "80.3%",
@@ -706,7 +763,6 @@ class Main extends Component {
                     </div>
 
 
-
                     <div style={{
                         width: "14.35%",
                         height: "6%",
@@ -725,29 +781,28 @@ class Main extends Component {
                             position: "absolute",
                             fontSize: "1vw",
                         }}>
-                            X幅值:{}
+                            X幅值:{this.state.Section1_1X_Amp}um
                             <br/>
-                            X相位:{}
+                            X相位:{this.state.Section1_1X_Amp}度
                             <br/>
-                            Y幅值:{}
+                            Y幅值:{this.state.Section1_1X_Amp}um
                             <br/>
-                            Y相位:{}
+                            Y相位:{this.state.Section1_1X_Amp}度
                             <br/>
-                            长轴:{}
+                            长轴:{this.state.Section1_Holo_Long}um
                             <br/>
-                            短轴:{}
+                            短轴:{this.state.Section1_Holo_Short}um
                             <br/>
-                            偏心率:{}
+                            偏心率:{this.state.Section1_Holo_Ecc}
                             <br/>
-                            倾斜角:{}
+                            倾斜角:{this.state.Section1_Holo_Angle}度
                             <br/>
-                            初相角:{}
+                            初相角:{this.state.Section1_Holo_OP}度
                             <br/>
-                            旋向:{}
+                            旋向:{this.state.Section1_Holo_Direction}
                             <br/>
                         </span>
                     </div>
-
 
 
                     <Button type={"link"} size={"large"}
@@ -783,7 +838,51 @@ class Main extends Component {
                         height: "100%",
                         fontSize: '1vw'
                     }}>透平轴前振动</span></Button>
+                    <p style={{
+                        width: "1%",
+                        height: "10%",
+                        position: "absolute",
+                        top: "20.39%",
+                        left: "17.4%",
+                        fontSize: "1vm",
+                        color: 'white'
+                    }}>
+                        原始轴心轨迹
+                    </p>
+                    <p style={{
+                        width: "1%",
+                        height: "10%",
+                        position: "absolute",
+                        top: "20.39%",
+                        left: "46.8%",
+                        fontSize: "1vm",
+                        color: 'white'
+                    }}>
+                        合成轴心轨迹
+                    </p>
 
+                    <p style={{
+                        width: "10%",
+                        height: "10%",
+                        position: "absolute",
+                        top: "56.5%",
+                        left: "29.7%",
+                        fontSize: "1vm",
+                        color: 'white'
+                    }}>
+                        二维全息谱图
+                    </p>
+                    <p style={{
+                        width: "10%",
+                        height: "10%",
+                        position: "absolute",
+                        top: "56.5%",
+                        left: "64.2%",
+                        fontSize: "1vm",
+                        color: 'white'
+                    }}>
+                        三维全息谱图
+                    </p>
 
                     {/*<Row>*/}
                     {/*    <Col span={24}>*/}
