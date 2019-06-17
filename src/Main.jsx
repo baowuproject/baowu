@@ -13,14 +13,14 @@ class Main extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            leftLineOneSP: 1,
-            leftLineOneCZ: 0,
-            leftLineTwoSP: 1,
-            leftLineTwoCZ: 1,
-            leftLineThreeSP: 1,
-            leftLineThreeCZ: 1,
-            leftLineFourSP: 1,
-            leftLineFourCZ: 1,
+            Section1_Alarm_1: 1,
+            Section1_Alarm_2: 0,
+            Section2_Alarm_1: 1,
+            Section2_Alarm_2: 1,
+            Section3_Alarm_1: 1,
+            Section3_Alarm_2: 1,
+            Section4_Alarm_1: 1,
+            Section4_Alarm_2: 1,
             Section1_1X_Amp: 0,
             Section1_1X_Phase: 0,
             Section1_1Y_Amp: 0,
@@ -41,6 +41,11 @@ class Main extends Component {
 
         }
     }
+    // componentWillMount = async () => {
+    //     let res = await fetch("url")
+    //     res = await res.json()
+    //
+    // }
 
     render() {
         return (
@@ -429,7 +434,7 @@ class Main extends Component {
                         width: "13.4%",
                         height: "5%",
                         position: "absolute",
-                        backgroundImage: this.state.leftLineOneSP || this.state.leftLineOneCZ ? "url('./static/leftSider/wrong.png')" :
+                        backgroundImage: this.state.Section1_Alarm_1 || this.state.Section1_Alarm_2 ? "url('./static/leftSider/wrong.png')" :
                             "url('./static/leftSider/right.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
@@ -451,7 +456,7 @@ class Main extends Component {
                         width: "2%",
                         height: "3%",
                         position: "absolute",
-                        backgroundImage: this.state.leftLineOneSP ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
+                        backgroundImage: this.state.Section1_Alarm_1 ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                         top: "26.2%",
@@ -495,7 +500,7 @@ class Main extends Component {
                         width: "2%",
                         height: "3%",
                         position: "absolute",
-                        backgroundImage: this.state.leftLineOneCZ ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
+                        backgroundImage: this.state.Section1_Alarm_2 ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                         top: "30.8%",
@@ -527,7 +532,7 @@ class Main extends Component {
                         width: "13.4%",
                         height: "5%",
                         position: "absolute",
-                        backgroundImage: this.state.leftLineTwoSP || this.state.leftLineTwoCZ ? "url('./static/leftSider/wrong.png')" :
+                        backgroundImage: this.state.Section2_Alarm_1 || this.state.Section2_Alarm_2 ? "url('./static/leftSider/wrong.png')" :
                             "url('./static/leftSider/right.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
@@ -550,7 +555,7 @@ class Main extends Component {
                         width: "2%",
                         height: "3%",
                         position: "absolute",
-                        backgroundImage: this.state.leftLineTwoSP ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
+                        backgroundImage: this.state.Section2_Alarm_1 ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                         top: "42.8%",
@@ -582,7 +587,7 @@ class Main extends Component {
                         width: "2%",
                         height: "3%",
                         position: "absolute",
-                        backgroundImage: this.state.leftLineTwoCZ ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
+                        backgroundImage: this.state.Section2_Alarm_2 ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                         top: "47.4%",
@@ -615,7 +620,7 @@ class Main extends Component {
                         width: "13.4%",
                         height: "5%",
                         position: "absolute",
-                        backgroundImage: this.state.leftLineThreeSP || this.state.leftLineThreeCZ ? "url('./static/leftSider/wrong.png')" :
+                        backgroundImage: this.state.Section3_Alarm_1 || this.state.Section3_Alarm_2 ? "url('./static/leftSider/wrong.png')" :
                             "url('./static/leftSider/right.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
@@ -638,7 +643,7 @@ class Main extends Component {
                         width: "2%",
                         height: "3%",
                         position: "absolute",
-                        backgroundImage: this.state.leftLineThreeSP ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
+                        backgroundImage: this.state.Section3_Alarm_1 ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                         top: "59.2%",
@@ -670,7 +675,7 @@ class Main extends Component {
                         width: "2%",
                         height: "3%",
                         position: "absolute",
-                        backgroundImage: this.state.leftLineThreeCZ ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
+                        backgroundImage: this.state.Section3_Alarm_2 ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                         top: "63.8%",
@@ -702,7 +707,7 @@ class Main extends Component {
                         width: "13.4%",
                         height: "5%",
                         position: "absolute",
-                        backgroundImage: this.state.leftLineFourSP || this.state.leftLineFourCZ ? "url('./static/leftSider/wrong.png')" :
+                        backgroundImage: this.state.Section4_Alarm_1 || this.state.Section4_Alarm_2 ? "url('./static/leftSider/wrong.png')" :
                             "url('./static/leftSider/right.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
@@ -724,7 +729,7 @@ class Main extends Component {
                         width: "2%",
                         height: "3%",
                         position: "absolute",
-                        backgroundImage: this.state.leftLineFourSP ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
+                        backgroundImage: this.state.Section4_Alarm_1 ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                         top: "75.7%",
@@ -756,7 +761,7 @@ class Main extends Component {
                         width: "2%",
                         height: "3%",
                         position: "absolute",
-                        backgroundImage: this.state.leftLineFourCZ ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
+                        backgroundImage: this.state.Section4_Alarm_2 ? "url('./static/rightSider/wrongTag.png')" : "url('./static/leftSider/green.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                         top: "80.3%",
