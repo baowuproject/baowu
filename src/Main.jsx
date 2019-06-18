@@ -12,6 +12,42 @@ const {Header, Footer, Sider, Content} = Layout;
 
 class Main extends Component {
 
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
+    //         Section1_Alarm_1: 1,
+    //         Section1_Alarm_2: 0,
+    //         Section2_Alarm_1: 1,
+    //         Section2_Alarm_2: 1,
+    //         Section3_Alarm_1: 1,
+    //         Section3_Alarm_2: 1,
+    //         Section4_Alarm_1: 1,
+    //         Section4_Alarm_2: 1,
+    //         Section1_1X_Amp: 0,
+    //         Section1_1X_Phase: 0,
+    //         Section1_1Y_Amp: 0,
+    //         Section1_1Y_Phase: 0,
+    //         Section1_Holo_Long: 0,
+    //         Section1_Holo_Short: 0,
+    //         Section1_Holo_Ecc: 0,
+    //         Section1_Holo_Angle: 0,
+    //         Section1_Holo_OP: 0,
+    //         Section1_Holo_Direction: 0,
+    //         Section1_Conclusion: 3,
+    //         Section1_Bal_Pro: 0,
+    //         Section1_Alig_Pro: 0,
+    //         Section1_Rub_Pro: 0,
+    //         Section1_Fault_Describe: "难道是中文就不可用？这就奇怪六",
+    //
+    //
+    //     }
+    // }
+
+    // componentWillMount = async () => {
+    //     let res = await fetch("url")
+    //     res = await res.json()
+    //
+    // }
 
     componentDidMount() {
         let app = {}
@@ -564,6 +600,7 @@ class Main extends Component {
     // }
 
 
+
     render() {
         return (
 
@@ -726,6 +763,9 @@ class Main extends Component {
                             top: "23%",
                             left: "88.5%",
                         }}></div> : null
+                        }}>
+
+                        </div> : null
                     }
                     <div style={{
                         width: "14.35%",
@@ -928,25 +968,52 @@ class Main extends Component {
                             故障描述
                         </span>
                     </div>
+
+
+
                     <div style={{
                         width: "12%",
-                        height: "18%",
+                        height: "19%",
                         position: "absolute",
+                        // backgroundImage: "url('./static/rightSider/description.png')",
+                        // backgroundRepeat: "no-repeat",
+                        // backgroundSize: "cover",
                         top: "73.5%",
                         left: "86.7%",
                         // backgroundColor:"white",
-                        overflow: "scroll"
+                        overflow: "scroll",
                     }}>
                         <span style={{
                             height: "100%",
+                            width:"107%",
                             color: "white",
                             position: "absolute",
                             fontSize: "0.9vw",
-                            margin: "auto"
+                            margin: "auto",
+                            overflowY:"auto",
                         }}>
                             {this.state.Section1_Fault_Describe}
                         </span>
                     </div>
+                    {/*<div style={{*/}
+                    {/*    width: "12%",*/}
+                    {/*    height: "18%",*/}
+                    {/*    position: "absolute",*/}
+                    {/*    top: "73.5%",*/}
+                    {/*    left: "86.7%",*/}
+                    {/*    // backgroundColor:"white",*/}
+                    {/*    overflowX: "auto"*/}
+                    {/*}}>*/}
+                    {/*    <span style={{*/}
+                    {/*            // height: "100%",*/}
+                    {/*            width: "100%",*/}
+                    {/*            color: "white",*/}
+                    {/*            position: "absolute",*/}
+                    {/*            fontSize: "0.9vw",*/}
+                    {/*        }}>*/}
+                    {/*        {this.state.Section1_Fault_Describe}*/}
+                    {/*    </span>*/}
+                    {/*</div>*/}
                     <div style={{
                         width: "13.4%",
                         height: "5%",
@@ -1517,6 +1584,19 @@ class Main extends Component {
                     }}>
                         机组总貌图
                     </p>
+                    <div id="test"
+                         style={{
+
+                             width: "10%",
+                             height: 150,
+                             position: "absolute",
+                             top: "19.5%",
+                             left: "35.2%",
+
+
+                         }}>
+
+                    </div>
 
                     {/*<Row>*/}
                     {/*    <Col span={24}>*/}
@@ -1677,7 +1757,7 @@ class Main extends Component {
                     {/*    </Layout>*/}
                     {/*</Layout>*/}
                 </div>
-            </div>
+            // </div>
 
         )
     }
