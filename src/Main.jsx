@@ -36,12 +36,12 @@ class Main extends Component {
             Section1_Bal_Pro: 0,
             Section1_Alig_Pro: 0,
             Section1_Rub_Pro: 0,
-            Section1_Fault_Describe: "assdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfsadf",
-
+            Section1_Fault_Describe: "难道是中文就不可用？这就奇怪六",
 
 
         }
     }
+
     // componentWillMount = async () => {
     //     let res = await fetch("url")
     //     res = await res.json()
@@ -52,39 +52,39 @@ class Main extends Component {
         let app = {}
         let symbolSize = 4;
         let data = [
-            {value:[-1.1591473	,0.52753085]},
-            {value:[-1.1307307	,0.36183468]},
-            {value:[-1.0551773	,0.18105464]},
-            {value:[-0.93563646	,-0.00727307]},
-            {value:[-0.7770916	,-0.1952978]},
-            {value:[-0.586152	,-0.3751809]},
-            {value:[-0.37077734	,-0.53942376]},
-            {value:[-0.13994549	,-0.6811797]},
-            {value:[0.096719794	,-0.794539]},
-            {value:[0.3293531	,-0.87477624]},
-            {value:[0.5482566	,-0.9185465]},
-            {value:[0.74430484	,-0.9240251]},
-            {value:[0.90932506	,-0.89098376]},
-            {value:[1.0364381	,-0.82079977]},
-            {value:[1.1203451	,-0.71639866]},
-            {value:[1.1575478	,-0.5821332]},
-            {value:[1.1464957	,-0.42360014]},
-            {value:[1.0876492	,-0.24740843]},
-            {value:[0.98346186	,-0.060902957]},
-            {value:[0.83827674	,0.12814139]},
-            {value:[0.65814614	,0.31184387]},
-            {value:[0.45057935	,0.48254648]},
-            {value:[0.22422914	,0.63313305]},
-            {value:[-0.011468535	,0.757326]},
-            {value:[-0.24668813	,0.8499484]},
-            {value:[-0.471624	,0.9071387]},
-            {value:[-0.67689914	,0.92651296]},
-            {value:[-0.85395706	,0.90726334]},
-            {value:[-0.99541503	,0.8501924]},
-            {value:[-1.095377	,0.75767934]},
-            {value:[-1.1496756	,0.63358086]},
-            {value:[-1.1560476	,0.48307005]},
-            {value:[-1.1142272	,0.3124215]},
+            {value: [-1.1591473, 0.52753085]},
+            {value: [-1.1307307, 0.36183468]},
+            {value: [-1.0551773, 0.18105464]},
+            {value: [-0.93563646, -0.00727307]},
+            {value: [-0.7770916, -0.1952978]},
+            {value: [-0.586152, -0.3751809]},
+            {value: [-0.37077734, -0.53942376]},
+            {value: [-0.13994549, -0.6811797]},
+            {value: [0.096719794, -0.794539]},
+            {value: [0.3293531, -0.87477624]},
+            {value: [0.5482566, -0.9185465]},
+            {value: [0.74430484, -0.9240251]},
+            {value: [0.90932506, -0.89098376]},
+            {value: [1.0364381, -0.82079977]},
+            {value: [1.1203451, -0.71639866]},
+            {value: [1.1575478, -0.5821332]},
+            {value: [1.1464957, -0.42360014]},
+            {value: [1.0876492, -0.24740843]},
+            {value: [0.98346186, -0.060902957]},
+            {value: [0.83827674, 0.12814139]},
+            {value: [0.65814614, 0.31184387]},
+            {value: [0.45057935, 0.48254648]},
+            {value: [0.22422914, 0.63313305]},
+            {value: [-0.011468535, 0.757326]},
+            {value: [-0.24668813, 0.8499484]},
+            {value: [-0.471624, 0.9071387]},
+            {value: [-0.67689914, 0.92651296]},
+            {value: [-0.85395706, 0.90726334]},
+            {value: [-0.99541503, 0.8501924]},
+            {value: [-1.095377, 0.75767934]},
+            {value: [-1.1496756, 0.63358086]},
+            {value: [-1.1560476, 0.48307005]},
+            {value: [-1.1142272, 0.3124215]},
 
 
         ];
@@ -181,8 +181,8 @@ class Main extends Component {
                         left: "35%"
                     }}>
                         <span style={{
-                            color:"white",
-                            fontSize:"2vw"
+                            color: "white",
+                            fontSize: "2vw"
                         }}>
                         高炉煤气余压回收透平发电装置(TRT)
                         </span>
@@ -243,7 +243,7 @@ class Main extends Component {
                         left: "29%"
                     }}>
                     </div>
-                        {/*<img src="./static/centerBottom/dataFlow.png" alt=""/>*/}
+                    {/*<img src="./static/centerBottom/dataFlow.png" alt=""/>*/}
                     <div style={{
                         width: "14.77%",
                         height: "5%",
@@ -302,15 +302,17 @@ class Main extends Component {
                     </div>
                     {
                         this.state.Section1_Conclusion === 1 ? <div style={{
-                                width: "2%",
-                                height: "3%",
-                                position: "absolute",
-                                backgroundImage: "url('./static/rightSider/wrongTag.png')",
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                top: "23%",
-                                left: "88.5%",
-                            }}> </div>: null
+                            width: "2%",
+                            height: "3%",
+                            position: "absolute",
+                            backgroundImage: "url('./static/rightSider/wrongTag.png')",
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "cover",
+                            top: "23%",
+                            left: "88.5%",
+                        }}>
+
+                        </div> : null
                     }
                     <div style={{
                         width: "14.35%",
@@ -336,7 +338,7 @@ class Main extends Component {
 
 
                     {
-                        this.state.Section1_Conclusion === 2 ?  <div style={{
+                        this.state.Section1_Conclusion === 2 ? <div style={{
                             width: "2%",
                             height: "3%",
                             position: "absolute",
@@ -346,7 +348,7 @@ class Main extends Component {
                             top: "28.6%",
                             left: "88.5%",
                         }}>
-                        </div>: null
+                        </div> : null
                     }
 
                     <div style={{
@@ -383,7 +385,7 @@ class Main extends Component {
                             top: "33.8%",
                             left: "88.5%",
                         }}>
-                        </div>: null
+                        </div> : null
                     }
                     <div style={{
                         width: "14.35%",
@@ -513,25 +515,50 @@ class Main extends Component {
                             故障描述
                         </span>
                     </div>
+
+
+
                     <div style={{
                         width: "12%",
-                        height: "18%",
+                        height: "19%",
                         position: "absolute",
+                        // backgroundImage: "url('./static/rightSider/description.png')",
+                        // backgroundRepeat: "no-repeat",
+                        // backgroundSize: "cover",
                         top: "73.5%",
                         left: "86.7%",
-                        // backgroundColor:"white",
-                        overflow:"scroll"
+                        overflow:'hidden'
                     }}>
                         <span style={{
                             height: "100%",
+                            width:"107%",
                             color: "white",
                             position: "absolute",
-                            fontSize: "0.9vw",
-                            margin:"auto"
+                            overflowY:"auto",
+                            fontSize: "0.8vw",
                         }}>
                             {this.state.Section1_Fault_Describe}
                         </span>
                     </div>
+                    {/*<div style={{*/}
+                    {/*    width: "12%",*/}
+                    {/*    height: "18%",*/}
+                    {/*    position: "absolute",*/}
+                    {/*    top: "73.5%",*/}
+                    {/*    left: "86.7%",*/}
+                    {/*    // backgroundColor:"white",*/}
+                    {/*    overflowX: "auto"*/}
+                    {/*}}>*/}
+                    {/*    <span style={{*/}
+                    {/*            // height: "100%",*/}
+                    {/*            width: "100%",*/}
+                    {/*            color: "white",*/}
+                    {/*            position: "absolute",*/}
+                    {/*            fontSize: "0.9vw",*/}
+                    {/*        }}>*/}
+                    {/*        {this.state.Section1_Fault_Describe}*/}
+                    {/*    </span>*/}
+                    {/*</div>*/}
                     <div style={{
                         width: "13.4%",
                         height: "5%",
